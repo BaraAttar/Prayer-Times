@@ -1,7 +1,7 @@
 const title = document.getElementById("title");
 
 const dateOfToday = document.getElementById("dateOfToday");
-// new
+
 const timeNow = document.getElementById("timeNow");
 
 const fajr = document.getElementById("fajr");
