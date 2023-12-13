@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Cairo";
+}
+
+/* small screen */
+@media (max-width: 739px) {
+  #card {
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    width: 90%;
+    /* height: 80vh; */
+    backdrop-filter: blur(10px) saturate(1.1);
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+  }
+
+  #title {
+    text-align: right;
+    margin: 0;
+  }
+
+  .date {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    justify-content: flex-end;
+  }
+
+  .date > p {
+    margin-left: 10px;
+  }
+  #timeNow {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+  }
+
+  .timings {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    direction: rtl;
+  }
+
+}
+
+/* larg screen */
+@media (min-width: 740px) {
+
+  #card {
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    width: 700px;
+    /* height: 400px; */
+    backdrop-filter: blur(10px) saturate(1.1);
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+  }
+
+  #title {
+    padding-right: 20px;
+    text-align: right;
+    margin: 0;
+  }
+
+  .date {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    justify-content: flex-end;
+  }
+
+  .date > p {
+    margin-left: 10px;
+  }
+  #timeNow {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+  }
+
+  .timings {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    direction: rtl;
+  }
+
+  .timings > div {
+    text-align: center;
+    padding: 20px;
+    width: 18%;
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    transition: ease-in-out 100ms;
+  }
+
+  .timings > div:hover {
+    transform: scale(1.2);
+  }
+
+  
+}
+
+#select-city {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  direction: rtl;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+#select-city > option {
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+}

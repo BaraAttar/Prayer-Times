@@ -1,0 +1,161 @@
+.main-div {
+    width: 50%;
+    margin: 10px auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.searchBox {
+    width: 100%;
+    padding: 5px;
+}
+
+.searchBox input {
+    background: transparent;
+    font-size: 18px;
+    width: 100%;
+    outline: 0;
+    border: none;
+}
+
+.list {
+    display: none;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.23);
+    max-height: 300px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.list li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+li h4 {
+    margin: 0;
+}
+
+.list li:hover {
+    cursor: pointer;
+    background-color: rgba(171, 171, 171, 0.401);
+}
+
+/* anemation backgraund */
+
+.css-1ueqzyg {
+    position: fixed;
+    top: 40%;
+    right: 60%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at 50% 50%, #444bf7, #444af7aa);
+    opacity: 0.9;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 50%;
+  }
+  .css-10gqqxt {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 70%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(76, 0, 255, 1),
+      #4c00ffad
+    );
+    opacity: 0.9;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 50%;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 50px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+
+
+   /* loader */
+   .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #000000;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
